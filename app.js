@@ -3,7 +3,7 @@ function fetchDetails() {
     var modelNumber = document.getElementById("modelNumber").value;
 
 // Make an API request to fetch the details based on the entered model number
-fetch('https://sheets.googleapis.com/v4/spreadsheets/1LYDhZs-RpMlI2mb--DpmGloMEYUnkiRH4KYms4wHyRY/values/Sheet1!A:E?key=AIzaSyAeP_vcF6LEjjXHotfnWipj_QFHGqW7NfE')
+fetch('https://sheets.googleapis.com/v4/spreadsheets/1DRfdGvUkU62IXxJOkp9MrbU54sVmSAKCb5-yTn93Vmc/values/Sheet1!A:E?key=AIzaSyAanHgeY9e03JES4w2m-UR7QjJs4zt8nSM')
 .then(response => response.json())
 .then(data => {
   // Find the row that matches the model number
