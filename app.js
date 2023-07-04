@@ -14,10 +14,10 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1DRfdGvUkU62IXxJOkp9MrbU54s
   if (row) {
     detailsDisplay.innerHTML = `
       <h2>Details for Model ${modelNumber}</h2>
-      <p>ITEM: ${row[1]}</p>
-      <p>PRICE: ${row[2]}</p>
-      <p>BRAND: ${row[3]}</p>
-      <p>STOCK: ${row[4]}</p>
+      <p>BRAND: ${row[1]}</p>
+      <p>CATEGORY: ${row[2]}</p>
+      <p>NLC: ${row[3]}</p>
+      <p>MRP: ${row[4]}</p>
     `;
   } else {
     detailsDisplay.innerHTML = "<p>No details found for the entered model number.</p>";
