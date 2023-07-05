@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>Ashirbad Electronics</title>
+
   <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" user-scalable=no">
   <style>
     /* Additional CSS for button styling */
     .btn-primary {
@@ -11,27 +13,50 @@
       display: block;
       margin: 20px auto;
     }
-    
-    /* CSS for mobile view */
-    @media only screen and (max-width: 600px) {
-      body, html {
-        height: 100%;
-        margin: 0;
+
+    /* CSS for mobile-friendly layout and non-zoomable (Samsung devices) */
+    @media only screen and (max-device-width: 767px) {
+      body {
+        overflow-x: hidden;
+        zoom:200%;
       }
       
       .container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .col-md-6 {
-        width: 100%;
-        max-width: 400px;
+        position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        padding: 10px;
       }
     }
+    
+    /* CSS for mobile-friendly layout and non-zoomable (iPhones) */
+    @media only screen and (max-device-width: 767px)  {
+      body {
+        overflow-x: hidden;
+        zoom:200%;
+      }
+      
+      .container {
+         position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+    }
+    
+    /* Viewport settings to prevent zooming */
+    @viewport {
+      width: device-width;
+      initial-scale: 1;
+      maximum-scale: 1;
+      user-scalable: no;
+    }
+    input[type="text"], input[type="number"], textarea {
+  touch-action: manipulation;
+}
+
   </style>
 </head>
 <body>
