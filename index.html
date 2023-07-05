@@ -11,6 +11,22 @@
       display: block;
       margin: 20px auto;
     }
+    
+    /* CSS for mobile view */
+    @media only screen and (max-width: 600px) {
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .col-md-6 {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
   </style>
 </head>
 <body>
