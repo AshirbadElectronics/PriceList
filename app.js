@@ -1,6 +1,7 @@
 function fetchDetails() {
     debugger;
-    var modelNumber = document.getElementById("modelNumber").value;
+    var unformatNumber = document.getElementById("modelNumber").value;
+    var modelNumber = unformatNumber.toUpperCase();
 
 // Make an API request to fetch the details based on the entered model number
 fetch('https://sheets.googleapis.com/v4/spreadsheets/1DRfdGvUkU62IXxJOkp9MrbU54sVmSAKCb5-yTn93Vmc/values/Sheet1!A:E?key=AIzaSyAanHgeY9e03JES4w2m-UR7QjJs4zt8nSM')
