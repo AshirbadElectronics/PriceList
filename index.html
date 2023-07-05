@@ -14,8 +14,13 @@
     
     /* CSS for mobile view */
     @media only screen and (max-width: 600px) {
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+      
       .container {
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
